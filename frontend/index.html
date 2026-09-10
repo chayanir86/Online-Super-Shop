@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SuperShop — Better Products, Better Life</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="logo" href="/">🛒 <span>Super<span>Shop</span></span></a>
+    <div class="search"><input id="search" placeholder="Search for products..."><button onclick="loadProducts()">🔍</button></div>
+    <div class="nav-actions"><span>👤 Login / Register</span><a href="/cart.html">🛒 <b id="cartCount">0</b></a></div>
+  </div>
+  <div class="menu"><div class="container"><a href="/">Home</a><a href="#categories">All Categories</a><a href="#products">Deals</a><a href="#about">About Us</a><a href="#contact">Contact</a></div></div>
+</header>
+
+<main>
+  <section class="container hero">
+    <aside class="side">
+      <h3>Categories</h3>
+      <button onclick="setCategory('All')">🛍️ All Products</button>
+      <button onclick="setCategory('Groceries & Food')">🥦 Groceries & Food</button>
+      <button onclick="setCategory('Beverages')">🥤 Beverages</button>
+      <button onclick="setCategory('Personal Care')">🧴 Personal Care</button>
+      <button onclick="setCategory('Household Items')">🧹 Household Items</button>
+      <button onclick="setCategory('Snacks & Biscuits')">🍪 Snacks & Biscuits</button>
+    </aside>
+    <div class="hero-card">
+      <div><p class="eyebrow">QUALITY • VALUE • FAST DELIVERY</p><h1>Fresh Groceries<br><span>For a Healthier You</span></h1><p>Quality products • Best prices • Fast delivery</p><a class="btn" href="#products">Shop Now →</a></div>
+      <div class="hero-art">🥬 🥦 🥕<br>🍎 🍌 🛒</div>
+    </div>
+  </section>
+
+  <section class="container benefits">
+    <div>🚚 <b>Free Home Delivery</b><small>On orders over ৳1000</small></div>
+    <div>🛡️ <b>Secure Payment</b><small>100% secure checkout</small></div>
+    <div>🔄 <b>Easy Returns</b><small>Within 7 days</small></div>
+    <div>💬 <b>24/7 Support</b><small>We are here to help</small></div>
+  </section>
+
+  <section class="container section" id="products">
+    <div class="section-title"><h2>Popular Products</h2><span id="resultCount"></span></div>
+    <div id="productsGrid" class="grid"></div>
+  </section>
+</main>
+
+<footer id="contact"><div class="container footer"><div><div class="logo">🛒 SuperShop</div><p>Better Products, Better Life.</p></div><div><b>Quick Links</b><p>About Us<br>Privacy Policy<br>Terms & Conditions</p></div><div><b>Contact</b><p>Dhaka, Bangladesh<br>support@supershop.local<br><a href="/admin-login.html" style="color:#9be7bf">Admin Login</a></p></div></div></footer>
+<script src="/js/app.js"></script>
+</body>
+</html>
